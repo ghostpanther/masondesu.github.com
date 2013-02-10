@@ -3,7 +3,7 @@
 # ----------------------- #
 
 url: http://masondesu.github.com
-title: The Programmer's Enchiridion
+title: Lambda, my Lambda!
 subtitle: Programming!
 author: Mason Stewart
 simple_search: http://google.com/search
@@ -33,7 +33,7 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: rdiscount
+markdown: maruku
 pygments: false # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
