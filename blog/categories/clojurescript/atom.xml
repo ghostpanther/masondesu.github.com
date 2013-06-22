@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ClojureScript | masondesu]]></title>
+  <link href="http://masondesu.github.com/blog/categories/clojurescript/atom.xml" rel="self"/>
+  <link href="http://masondesu.github.com/"/>
+  <updated>2013-06-22T18:35:19-04:00</updated>
+  <id>http://masondesu.github.com/</id>
+  <author>
+    <name><![CDATA[Mason Stewart]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The simplest way to install and use rlwrap with a ClojureScript repl]]></title>
+    <link href="http://masondesu.github.com/blog/2013/06/22/the-simplest-way-to-install-and-use-rlwrap-with-a-clojurescript-repl/"/>
+    <updated>2013-06-22T18:05:00-04:00</updated>
+    <id>http://masondesu.github.com/blog/2013/06/22/the-simplest-way-to-install-and-use-rlwrap-with-a-clojurescript-repl</id>
+    <content type="html"><![CDATA[<h3 id='arrow_keys_not_working_in_your_clojurescript_repl'>Arrow keys not working in your ClojureScript repl?</h3>
+
+<p>For some reason, whenever I would run <code>lein trampoline cljsbuild repl-listen</code> while setting up a ClojureScript browser repl, all arrow keys, Emacs style navigation (<code>ctrl-p</code>, etc.), and history were not working. They worked fine in the normal <code>lein repl</code>, but something went wrong either with trampoline, cljsbuild, or both. Either way, Google informed me that I should probably be using a tool called rlwrap to fix it.</p>
+
+<h3 id='installing_rlwrap_on_osx'>Installing rlwrap on OSX</h3>
+
+<p>There are lots of articles about installing rlwrap into your clojure folder and running some awful looking Java commands, but there&#8217;s a much easier way: just use Homebrew to install it. <code>brew install rlwrap</code> will get you set up, and then you&#8217;ll be able to run <code>rlwrap lein trampoline cljsbuild repl-listen</code> with fully functional arrow keys and history. You&#8217;ll even get back the old-school flashing cursor when you match parens. Righteous!</p>]]></content>
+  </entry>
+  
+</feed>

@@ -3,11 +3,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>masondesu</title>
+	<title>Thoughts on Learning Lisp - masondesu</title>
 	<meta name="author" content="Mason Stewart">
 
 	
-	<meta name="description" content="Arrow keys not working in your ClojureScript repl? For some reason, whenever I would run lein trampoline cljsbuild repl-listen while setting up a &hellip;">
+	<meta name="description" content="Were I not so lucky Having been writing Clojure (my first Lisp) and Scheme (my second) regularly over the past year, I&#8217;ve often wondered what &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -72,65 +72,9 @@
 </nav>
 
 </header>
-	<div id="content" class="inner">
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/06/22/the-simplest-way-to-install-and-use-rlwrap-with-a-clojurescript-repl/">
-		
-			The Simplest Way to Install and Use Rlwrap With a ClojureScript Repl</a>
-	</h2>
-	<div class="entry-content">
-		<h3 id='arrow_keys_not_working_in_your_clojurescript_repl'>Arrow keys not working in your ClojureScript repl?</h3>
-
-<p>For some reason, whenever I would run <code>lein trampoline cljsbuild repl-listen</code> while setting up a ClojureScript browser repl, all arrow keys, Emacs style navigation (<code>ctrl-p</code>, etc.), and history were not working. They worked fine in the normal <code>lein repl</code>, but something went wrong either with trampoline, cljsbuild, or both. Either way, Google informed me that I should probably be using a tool called rlwrap to fix it.</p>
-
-<h3 id='installing_rlwrap_on_osx'>Installing rlwrap on OSX</h3>
-
-<p>There are lots of articles about installing rlwrap into your clojure folder and running some awful looking Java commands, but there&#8217;s a much easier way: just use Homebrew to install it. <code>brew install rlwrap</code> will get you set up, and then you&#8217;ll be able to run <code>rlwrap lein trampoline cljsbuild repl-listen</code> with fully functional arrow keys and history. You&#8217;ll even get back the old-school flashing cursor when you match parens. Righteous!</p>
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-22T18:05:00-04:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/clojure/'>Clojure</a>, <a class='category' href='/blog/categories/clojurescript/'>ClojureScript</a>, <a class='category' href='/blog/categories/lisp/'>Lisp</a>, <a class='category' href='/blog/categories/rlwrap/'>rlwrap</a>
-
-
-</div>
-	
-		<div class="comments"><a href="/blog/2013/06/22/the-simplest-way-to-install-and-use-rlwrap-with-a-clojurescript-repl//index.html#disqus_thread">Comments</a></div>
-	
-</div></article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/02/10/thoughts-on-learning-lisp/">
-		
-			Thoughts on Learning Lisp</a>
-	</h2>
-	<div class="entry-content">
-		<h3 id='were_i_not_so_lucky'>Were I not so lucky</h3>
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">Thoughts on Learning Lisp</h2>
+	<div class="entry-content"><h3 id='were_i_not_so_lucky'>Were I not so lucky</h3>
 
 <p>Having been writing Clojure (my first Lisp) and Scheme (my second) regularly over the past year, I&#8217;ve often wondered what my experience would&#8217;ve been if I <em>hadn&#8217;t</em> been introduced to Lisp by <a href='http://twitter.com/heyzk'>Zachary Kim</a>, a friend and former co-worker whom I greatly respect.</p>
 
@@ -177,10 +121,7 @@
 <p>I&#8217;m interested to hear from programmers who are new to Lisp. What else could be done to make entry into the Lisp family easier?</p>
 <div class='footnotes'><hr /><ol><li id='fn:1'>
 <p>At least, the exclusive use of the REPL, rather than files, hasn&#8217;t changed in the first 100 pages, which is as far as I have currently read.</p>
-<a href='#fnref:1' rev='footnote'>&#8617;</a></li></ol></div>
-		
-		
-	</div>
+<a href='#fnref:1' rev='footnote'>&#8617;</a></li></ol></div></div>
 
 
 <div class="meta">
@@ -205,15 +146,16 @@
 
 </div>
 	
-		<div class="comments"><a href="/blog/2013/02/10/thoughts-on-learning-lisp//index.html#disqus_thread">Comments</a></div>
+		<div class="comments"><a href="/blog/2013/02/10/thoughts-on-learning-lisp/#disqus_thread">Comments</a></div>
 	
 </div></article>
 
-<nav id="pagenavi">
-    
-    
-    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
-</nav></div>
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
 	<footer id="footer" class="inner">Copyright &copy; 2013
 
     Mason Stewart
@@ -232,7 +174,10 @@
       var disqus_shortname = 'masondesu';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://masondesu.github.com/blog/2013/02/10/thoughts-on-learning-lisp/';
+        var disqus_url = 'http://masondesu.github.com/blog/2013/02/10/thoughts-on-learning-lisp/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

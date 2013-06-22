@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[masondesu]]></title>
+  <link href="http://masondesu.github.com/atom.xml" rel="self"/>
+  <link href="http://masondesu.github.com/"/>
+  <updated>2013-06-22T18:35:19-04:00</updated>
+  <id>http://masondesu.github.com/</id>
+  <author>
+    <name><![CDATA[Mason Stewart]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The simplest way to install and use rlwrap with a ClojureScript repl]]></title>
+    <link href="http://masondesu.github.com/blog/2013/06/22/the-simplest-way-to-install-and-use-rlwrap-with-a-clojurescript-repl/"/>
+    <updated>2013-06-22T18:05:00-04:00</updated>
+    <id>http://masondesu.github.com/blog/2013/06/22/the-simplest-way-to-install-and-use-rlwrap-with-a-clojurescript-repl</id>
+    <content type="html"><![CDATA[<h3 id='arrow_keys_not_working_in_your_clojurescript_repl'>Arrow keys not working in your ClojureScript repl?</h3>
+
+<p>For some reason, whenever I would run <code>lein trampoline cljsbuild repl-listen</code> while setting up a ClojureScript browser repl, all arrow keys, Emacs style navigation (<code>ctrl-p</code>, etc.), and history were not working. They worked fine in the normal <code>lein repl</code>, but something went wrong either with trampoline, cljsbuild, or both. Either way, Google informed me that I should probably be using a tool called rlwrap to fix it.</p>
+
+<h3 id='installing_rlwrap_on_osx'>Installing rlwrap on OSX</h3>
+
+<p>There are lots of articles about installing rlwrap into your clojure folder and running some awful looking Java commands, but there&#8217;s a much easier way: just use Homebrew to install it. <code>brew install rlwrap</code> will get you set up, and then you&#8217;ll be able to run <code>rlwrap lein trampoline cljsbuild repl-listen</code> with fully functional arrow keys and history. You&#8217;ll even get back the old-school flashing cursor when you match parens. Righteous!</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Thoughts on Learning Lisp]]></title>
+    <link href="http://masondesu.github.com/blog/2013/02/10/thoughts-on-learning-lisp/"/>
+    <updated>2013-02-10T12:51:00-05:00</updated>
+    <id>http://masondesu.github.com/blog/2013/02/10/thoughts-on-learning-lisp</id>
+    <content type="html"><![CDATA[<h3 id='were_i_not_so_lucky'>Were I not so lucky</h3>
+
+<p>Having been writing Clojure (my first Lisp) and Scheme (my second) regularly over the past year, I&#8217;ve often wondered what my experience would&#8217;ve been if I <em>hadn&#8217;t</em> been introduced to Lisp by <a href='http://twitter.com/heyzk'>Zachary Kim</a>, a friend and former co-worker whom I greatly respect.</p>
+
+<p>It was easy to trust him that Clojure was worth learning, worth suffering through the absurd Emacs configuration on OS X, and worth learning Emacs. The keyword being <strong>trust</strong>. Would I (or others) have been able to trust that recommendation if it didn&#8217;t come from a good friend?</p>
+
+<p>I&#8217;d love to think that my love of learning and generally patient demeanor would have gotten me through it. However, I would wager that there are many brilliant potential Lispers out there who simply wouldn&#8217;t have survived the alien world of Emacs, Slime, Swank, etc. long enough to get to the fun stuff. Don&#8217;t get me wrong; I love Emacs. I feel strongly however that learning Lisp doesn&#8217;t mean you should have to learn Emacs, too.</p>
+
+<h3 id='lowering_the_barrier'>Lowering the barrier</h3>
+
+<p>Conrad Barski&#8217;s amazing book <a href='http://landoflisp.com/'>Land of Lisp</a> has you simply typing expressions into the REPL<sup id='fnref:1'><a href='#fn:1' rel='footnote'>1</a></sup>. At least to me, typing hundreds of lines of Common Lisp into the REPL wasn&#8217;t really going to be easy, and that&#8217;s probably true for many other people. What if your laptop battery runs out, or you accidentally close your REPL? Even if you&#8217;re typing everything into a file and saving it, you&#8217;d still be tediously copy and pasting code over the REPL. Not a <em>terrible</em> solution, but surely there&#8217;s something simpler.</p>
+
+<p>I took the opportunity to put myself in others&#8217; shoes and ask, &#8220;What&#8217;s the simplest way that someone with no programming experience could make it through this book?&#8221; The obvious answer seemed to be:</p>
+
+<ul>
+<li>Use <a href='http://www.sublimetext.com/'>Sublime Text</a>, which comes with a Lisp syntax mode (though there are few problems with its indentation)</li>
+
+<li>Install <a href='http://wbond.net/sublime_packages/package_control'>Package Control</a> for Sublime</li>
+
+<li>Using Package Control, install <a href='https://github.com/wuub/SublimeREPL'>SublimeREPL</a>, which has built-in support for <a href='http://www.clisp.org/'>Clisp</a> (though Clisp needs to be installed separately, a procedure which Conrad covers in the first chapter)</li>
+
+<li>UPDATE: Grab a copy of Jonathan Fischer Friberg&#8217;s excellent <a href='https://github.com/odyssomay/paredit'>Sublime Paredit</a> and <a href='https://github.com/odyssomay/sublime-lispindent'>Sublime Lisp Indent</a> plugins. Literally a Sublime Lisper&#8217;s dream come true</li>
+
+<li><strong>(optional)</strong> Setup <a href='https://gist.github.com/masondesu/4699970'>more ergonomic keyboard shortcuts</a> for SublimeREPL&#8217;s &#8220;Eval in REPL&#8221; command</li>
+</ul>
+
+<h3 id='that_was_easy'>That was easy!</h3>
+
+<p>There are a few things that I really like about this setup:</p>
+
+<ul>
+<li>In less than five minutes you&#8217;ve got a Common Lisp REPL running in a cross-platform editor that very new-user-friendly used daily by many, many programmers.</li>
+
+<li>You can save your code in files, and <em>very</em> easily send and re-send a block, line, selection, or entire file over to be evaluated in the REPL</li>
+
+<li>At any point you can jump over the REPL and type directly into it.</li>
+
+<li>At least on OS X, Sublime (and most any OS X program) supports Emacs style keyboard navigation (<code>ctrl + p</code>, <code>ctrl + n</code>, etc.) which is a Good Thing™. Only use the mouse if you want to.</li>
+
+<li>Automatic parentheses handling</li>
+
+<li>Automatic Lisp-friendly indentation</li>
+</ul>
+
+<p>I&#8217;m interested to hear from programmers who are new to Lisp. What else could be done to make entry into the Lisp family easier?</p>
+<div class='footnotes'><hr /><ol><li id='fn:1'>
+<p>At least, the exclusive use of the REPL, rather than files, hasn&#8217;t changed in the first 100 pages, which is as far as I have currently read.</p>
+<a href='#fnref:1' rev='footnote'>&#8617;</a></li></ol></div>]]></content>
+  </entry>
+  
+</feed>
