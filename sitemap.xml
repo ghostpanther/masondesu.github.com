@@ -2,24 +2,30 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://masondesu.github.com/blog/2013/02/10/thoughts-on-learning-lisp/</loc>
-        <lastmod>2013-06-22T18:34:23-04:00</lastmod>
+        <lastmod>2013-06-24T10:03:11-04:00</lastmod>
     </url>
     <url>
         <loc>
             http://masondesu.github.com/blog/2013/06/22/the-simplest-way-to-install-and-use-rlwrap-with-a-clojurescript-repl/
         </loc>
-        <lastmod>2013-06-22T18:34:23-04:00</lastmod>
+        <lastmod>2013-06-24T10:03:11-04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://masondesu.github.com/blog/2013/07/01/clojurescript-repls-now-in-sublimerepl/
+        </loc>
+        <lastmod>2013-07-08T15:12:32-04:00</lastmod>
     </url>
     <url>
         <loc>http://masondesu.github.com/blog/archives/</loc>
-        <lastmod>2013-06-22T18:34:23-04:00</lastmod>
+        <lastmod>2013-07-08T15:12:32-04:00</lastmod>
     </url>
     <url>
         <loc>http://masondesu.github.com/</loc>
-        <lastmod>2013-06-22T18:34:23-04:00</lastmod>
+        <lastmod>2013-07-08T15:12:32-04:00</lastmod>
     </url>
     <url>
         <loc>http://masondesu.github.com/robots.txt</loc>
-        <lastmod>2013-06-22T18:34:23-04:00</lastmod>
+        <lastmod>2013-06-24T10:03:11-04:00</lastmod>
     </url>
 </urlset>
