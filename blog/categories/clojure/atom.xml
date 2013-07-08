@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Clojure | masondesu]]></title>
   <link href="http://masondesu.github.com/blog/categories/clojure/atom.xml" rel="self"/>
   <link href="http://masondesu.github.com/"/>
-  <updated>2013-07-08T15:14:24-04:00</updated>
+  <updated>2013-07-08T15:16:51-04:00</updated>
   <id>http://masondesu.github.com/</id>
   <author>
     <name><![CDATA[Mason Stewart]]></name>
@@ -20,7 +20,7 @@
     <id>http://masondesu.github.com/blog/2013/07/01/clojurescript-repls-now-in-sublimerepl</id>
     <content type="html"><![CDATA[<h3 id='well_that_was_easy'>Well that was easy!</h3>
 
-<p>I realized the other day that there were no ClojureScript REPLs in <a href='https://github.com/wuub/SublimeREPL'>SublimeREPL</a>, the REPL plugin for Sublime Text 2 and 3. No hard work on my part, just a simple commit that added a config file, but as SublimeREPL 2.0.0, the plugin now has two REPLs for ClojureScript: a browser REPL and a Rhino REPL.</p>
+<p>I realized the other day that there were no ClojureScript REPLs in <a href='https://github.com/wuub/SublimeREPL'>SublimeREPL</a>, the REPL plugin for Sublime Text 2 and 3. No hard work on my part, just a simple commit that added a config file, but as of SublimeREPL 2.0.0, the plugin now has two REPLs for ClojureScript: a browser REPL and a Rhino REPL.</p>
 
 <p>Version 2.0.0 is now available via <a href='http://wbond.net/sublime_packages/package_control'>Package Control</a>. Thanks to <a href='https://twitter.com/wuub'>@wuub</a> for all of the amazing hard work.</p>
 
