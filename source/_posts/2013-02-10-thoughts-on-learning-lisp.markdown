@@ -15,6 +15,8 @@ Having been writing Clojure (my first Lisp) and Scheme (my second) regularly ove
 
 It was easy to trust him that Clojure was worth learning, worth suffering through the absurd Emacs configuration on OS X, and worth learning Emacs. The keyword being **trust**. Would I (or others) have been able to trust that recommendation if it didn't come from a good friend?
 
+<!-- more -->
+
 I'd love to think that my love of learning and generally patient demeanor would have gotten me through it. However, I would wager that there are many brilliant potential Lispers out there who simply wouldn't have survived the alien world of Emacs, Slime, Swank, etc. long enough to get to the fun stuff. Don't get me wrong; I love Emacs. I feel strongly however that learning Lisp doesn't mean you should have to learn Emacs, too.
 
 ### Lowering the barrier
