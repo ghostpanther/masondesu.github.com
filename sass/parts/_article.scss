@@ -85,17 +85,13 @@ article{
 		iframe{
 			border: none;
 		}
+
 		table{
-			background: $color-gray04;
 			border: 1px solid $color-gray03;
 			border-spacing: 0;
 			margin-top: 10px;
 			th{
-				background: $color-gray03;
 				padding: 0 15px;
-			}
-			td{
-				text-align: center;
 			}
 			tr{
 				&:nth-of-type(2n){
@@ -103,6 +99,30 @@ article{
 				}
 			}
 		}
+
+		.gist {
+			margin-top: 20px;
+
+			.gist-data {
+				background: #fff;
+
+				.line-pre {
+					font-family: $font-mono;
+				}
+
+				.line-data {
+					padding-left: 1.2em !important;
+				}
+			}
+
+			table {
+				margin-top: 0;
+				border: none;
+				width: 100%;
+				line-height: 1.4;
+			}
+		}
+
 		.caption{
 			display: block;
 			font-size: 0.9em;
