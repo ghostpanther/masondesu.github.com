@@ -4,7 +4,7 @@
   <title><![CDATA[masondesu]]></title>
   <link href="http://masondesu.github.com/atom.xml" rel="self"/>
   <link href="http://masondesu.github.com/"/>
-  <updated>2013-07-08T15:16:51-04:00</updated>
+  <updated>2013-10-13T21:58:24-04:00</updated>
   <id>http://masondesu.github.com/</id>
   <author>
     <name><![CDATA[Mason Stewart]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Wercker config file for Yeoman Webapp generator projects]]></title>
+    <link href="http://masondesu.github.com/blog/2013/10/13/wercker-config-file-for-yeoman-webapp-generator-projects/"/>
+    <updated>2013-10-13T21:02:00-04:00</updated>
+    <id>http://masondesu.github.com/blog/2013/10/13/wercker-config-file-for-yeoman-webapp-generator-projects</id>
+    <content type="html"><![CDATA[<h3 id='getting_wercker_to_test_your_yeoman_webapp'>Getting Wercker to test your Yeoman Webapp</h3>
+
+<p><a href='http://wercker.com/'>Wercker</a> is a great continuous integration service that works well with just about any stack or application, including apps built with <a href='http://yeoman.io/'>Yeoman</a>&#8217;s ubiquitous <a href='https://github.com/yeoman/generator-webapp'>Webapp Generator</a>. I&#8217;ve been using Wercker for about 3 months now and have loved it. The Wercker team is very friendly and has been helpful on numerous occasions.</p>
+<!-- more -->
+<p>As their platform is new, writing config files can be a little vague. I thought I&#8217;d share the <code>wercker.yml</code> file needed to test a vanilla app created with the Yeoman Webapp Generator. Bear in mind, you&#8217;ll need to run <code>npm install --save bower</code> to make sure that Bower is installed on the test server&#8217;s VM. After that, just drop this in the root of your repo, push it, and add your repo to Wercker at https://app.wercker.com</p>
+<script src='https://gist.github.com/masondesu/6969216.js'> </script>]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ClojureScript REPLs now in SublimeREPL]]></title>
@@ -51,7 +64,7 @@
 <p>Having been writing Clojure (my first Lisp) and Scheme (my second) regularly over the past year, I&#8217;ve often wondered what my experience would&#8217;ve been if I <em>hadn&#8217;t</em> been introduced to Lisp by <a href='http://twitter.com/heyzk'>Zachary Kim</a>, a friend and former co-worker whom I greatly respect.</p>
 
 <p>It was easy to trust him that Clojure was worth learning, worth suffering through the absurd Emacs configuration on OS X, and worth learning Emacs. The keyword being <strong>trust</strong>. Would I (or others) have been able to trust that recommendation if it didn&#8217;t come from a good friend?</p>
-
+<!-- more -->
 <p>I&#8217;d love to think that my love of learning and generally patient demeanor would have gotten me through it. However, I would wager that there are many brilliant potential Lispers out there who simply wouldn&#8217;t have survived the alien world of Emacs, Slime, Swank, etc. long enough to get to the fun stuff. Don&#8217;t get me wrong; I love Emacs. I feel strongly however that learning Lisp doesn&#8217;t mean you should have to learn Emacs, too.</p>
 
 <h3 id='lowering_the_barrier'>Lowering the barrier</h3>

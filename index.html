@@ -7,7 +7,7 @@
 	<meta name="author" content="Mason Stewart">
 
 	
-	<meta name="description" content="Well that was easy! I realized the other day that there were no ClojureScript REPLs in SublimeREPL, the REPL plugin for Sublime Text 2 and 3. No &hellip;">
+	<meta name="description" content="Getting Wercker to test your Yeoman Webapp Wercker is a great continuous integration service that works well with just about any stack or &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -73,6 +73,50 @@
 
 </header>
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/10/13/wercker-config-file-for-yeoman-webapp-generator-projects/">
+		
+			Wercker Config File for Yeoman Webapp Generator Projects</a>
+	</h2>
+	<div class="entry-content">
+		<h3 id='getting_wercker_to_test_your_yeoman_webapp'>Getting Wercker to test your Yeoman Webapp</h3>
+
+<p><a href='http://wercker.com/'>Wercker</a> is a great continuous integration service that works well with just about any stack or application, including apps built with <a href='http://yeoman.io/'>Yeoman</a>&#8217;s ubiquitous <a href='https://github.com/yeoman/generator-webapp'>Webapp Generator</a>. I&#8217;ve been using Wercker for about 3 months now and have loved it. The Wercker team is very friendly and has been helpful on numerous occasions.</p>
+
+		
+		<a href="/blog/2013/10/13/wercker-config-file-for-yeoman-webapp-generator-projects/" class="more-link">Read on &rarr;</a>
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-13T21:02:00-04:00" pubdate data-updated="true">Oct 13<span>th</span>, 2013</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/bower/'>Bower</a>, <a class='category' href='/blog/categories/continuous-integration/'>Continuous Integration</a>, <a class='category' href='/blog/categories/grunt/'>Grunt</a>, <a class='category' href='/blog/categories/javascript/'>JavaScript</a>, <a class='category' href='/blog/categories/mocha/'>Mocha</a>, <a class='category' href='/blog/categories/node-js/'>Node.js</a>, <a class='category' href='/blog/categories/yeoman/'>Yeoman</a>
+
+
+</div>
+	
+		<div class="comments"><a href="/blog/2013/10/13/wercker-config-file-for-yeoman-webapp-generator-projects//index.html#disqus_thread">Comments</a></div>
+	
+</div></article>
 
 
     <article class="post">
@@ -183,50 +227,8 @@
 
 <p>It was easy to trust him that Clojure was worth learning, worth suffering through the absurd Emacs configuration on OS X, and worth learning Emacs. The keyword being <strong>trust</strong>. Would I (or others) have been able to trust that recommendation if it didn&#8217;t come from a good friend?</p>
 
-<p>I&#8217;d love to think that my love of learning and generally patient demeanor would have gotten me through it. However, I would wager that there are many brilliant potential Lispers out there who simply wouldn&#8217;t have survived the alien world of Emacs, Slime, Swank, etc. long enough to get to the fun stuff. Don&#8217;t get me wrong; I love Emacs. I feel strongly however that learning Lisp doesn&#8217;t mean you should have to learn Emacs, too.</p>
-
-<h3 id='lowering_the_barrier'>Lowering the barrier</h3>
-
-<p>Conrad Barski&#8217;s amazing book <a href='http://landoflisp.com/'>Land of Lisp</a> has you simply typing expressions into the REPL<sup id='fnref:1'><a href='#fn:1' rel='footnote'>1</a></sup>. At least to me, typing hundreds of lines of Common Lisp into the REPL wasn&#8217;t really going to be easy, and that&#8217;s probably true for many other people. What if your laptop battery runs out, or you accidentally close your REPL? Even if you&#8217;re typing everything into a file and saving it, you&#8217;d still be tediously copy and pasting code over the REPL. Not a <em>terrible</em> solution, but surely there&#8217;s something simpler.</p>
-
-<p>I took the opportunity to put myself in others&#8217; shoes and ask, &#8220;What&#8217;s the simplest way that someone with no programming experience could make it through this book?&#8221; The obvious answer seemed to be:</p>
-
-<ul>
-<li>Use <a href='http://www.sublimetext.com/'>Sublime Text</a>, which comes with a Lisp syntax mode (though there are few problems with its indentation)</li>
-
-<li>Install <a href='http://wbond.net/sublime_packages/package_control'>Package Control</a> for Sublime</li>
-
-<li>Using Package Control, install <a href='https://github.com/wuub/SublimeREPL'>SublimeREPL</a>, which has built-in support for <a href='http://www.clisp.org/'>Clisp</a> (though Clisp needs to be installed separately, a procedure which Conrad covers in the first chapter)</li>
-
-<li>UPDATE: Grab a copy of Jonathan Fischer Friberg&#8217;s excellent <a href='https://github.com/odyssomay/paredit'>Sublime Paredit</a> and <a href='https://github.com/odyssomay/sublime-lispindent'>Sublime Lisp Indent</a> plugins. Literally a Sublime Lisper&#8217;s dream come true</li>
-
-<li><strong>(optional)</strong> Setup <a href='https://gist.github.com/masondesu/4699970'>more ergonomic keyboard shortcuts</a> for SublimeREPL&#8217;s &#8220;Eval in REPL&#8221; command</li>
-</ul>
-
-<h3 id='that_was_easy'>That was easy!</h3>
-
-<p>There are a few things that I really like about this setup:</p>
-
-<ul>
-<li>In less than five minutes you&#8217;ve got a Common Lisp REPL running in a cross-platform editor that very new-user-friendly used daily by many, many programmers.</li>
-
-<li>You can save your code in files, and <em>very</em> easily send and re-send a block, line, selection, or entire file over to be evaluated in the REPL</li>
-
-<li>At any point you can jump over the REPL and type directly into it.</li>
-
-<li>At least on OS X, Sublime (and most any OS X program) supports Emacs style keyboard navigation (<code>ctrl + p</code>, <code>ctrl + n</code>, etc.) which is a Good Thing™. Only use the mouse if you want to.</li>
-
-<li>Automatic parentheses handling</li>
-
-<li>Automatic Lisp-friendly indentation</li>
-</ul>
-
-<p>I&#8217;m interested to hear from programmers who are new to Lisp. What else could be done to make entry into the Lisp family easier?</p>
-<div class='footnotes'><hr /><ol><li id='fn:1'>
-<p>At least, the exclusive use of the REPL, rather than files, hasn&#8217;t changed in the first 100 pages, which is as far as I have currently read.</p>
-<a href='#fnref:1' rev='footnote'>&#8617;</a></li></ol></div>
 		
-		
+		<a href="/blog/2013/02/10/thoughts-on-learning-lisp/" class="more-link">Read on &rarr;</a>
 	</div>
 
 

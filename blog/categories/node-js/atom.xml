@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Node.js | masondesu]]></title>
+  <link href="http://masondesu.github.com/blog/categories/node-js/atom.xml" rel="self"/>
+  <link href="http://masondesu.github.com/"/>
+  <updated>2013-10-13T21:58:24-04:00</updated>
+  <id>http://masondesu.github.com/</id>
+  <author>
+    <name><![CDATA[Mason Stewart]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Wercker config file for Yeoman Webapp generator projects]]></title>
+    <link href="http://masondesu.github.com/blog/2013/10/13/wercker-config-file-for-yeoman-webapp-generator-projects/"/>
+    <updated>2013-10-13T21:02:00-04:00</updated>
+    <id>http://masondesu.github.com/blog/2013/10/13/wercker-config-file-for-yeoman-webapp-generator-projects</id>
+    <content type="html"><![CDATA[<h3 id='getting_wercker_to_test_your_yeoman_webapp'>Getting Wercker to test your Yeoman Webapp</h3>
+
+<p><a href='http://wercker.com/'>Wercker</a> is a great continuous integration service that works well with just about any stack or application, including apps built with <a href='http://yeoman.io/'>Yeoman</a>&#8217;s ubiquitous <a href='https://github.com/yeoman/generator-webapp'>Webapp Generator</a>. I&#8217;ve been using Wercker for about 3 months now and have loved it. The Wercker team is very friendly and has been helpful on numerous occasions.</p>
+<!-- more -->
+<p>As their platform is new, writing config files can be a little vague. I thought I&#8217;d share the <code>wercker.yml</code> file needed to test a vanilla app created with the Yeoman Webapp Generator. Bear in mind, you&#8217;ll need to run <code>npm install --save bower</code> to make sure that Bower is installed on the test server&#8217;s VM. After that, just drop this in the root of your repo, push it, and add your repo to Wercker at https://app.wercker.com</p>
+<script src='https://gist.github.com/masondesu/6969216.js'> </script>]]></content>
+  </entry>
+  
+</feed>

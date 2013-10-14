@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Lisp | masondesu]]></title>
   <link href="http://masondesu.github.com/blog/categories/lisp/atom.xml" rel="self"/>
   <link href="http://masondesu.github.com/"/>
-  <updated>2013-07-08T15:16:51-04:00</updated>
+  <updated>2013-10-13T21:58:24-04:00</updated>
   <id>http://masondesu.github.com/</id>
   <author>
     <name><![CDATA[Mason Stewart]]></name>
@@ -51,7 +51,7 @@
 <p>Having been writing Clojure (my first Lisp) and Scheme (my second) regularly over the past year, I&#8217;ve often wondered what my experience would&#8217;ve been if I <em>hadn&#8217;t</em> been introduced to Lisp by <a href='http://twitter.com/heyzk'>Zachary Kim</a>, a friend and former co-worker whom I greatly respect.</p>
 
 <p>It was easy to trust him that Clojure was worth learning, worth suffering through the absurd Emacs configuration on OS X, and worth learning Emacs. The keyword being <strong>trust</strong>. Would I (or others) have been able to trust that recommendation if it didn&#8217;t come from a good friend?</p>
-
+<!-- more -->
 <p>I&#8217;d love to think that my love of learning and generally patient demeanor would have gotten me through it. However, I would wager that there are many brilliant potential Lispers out there who simply wouldn&#8217;t have survived the alien world of Emacs, Slime, Swank, etc. long enough to get to the fun stuff. Don&#8217;t get me wrong; I love Emacs. I feel strongly however that learning Lisp doesn&#8217;t mean you should have to learn Emacs, too.</p>
 
 <h3 id='lowering_the_barrier'>Lowering the barrier</h3>
